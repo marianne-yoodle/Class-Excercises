@@ -1,0 +1,56 @@
+* {
+    background-color: pink;
+}
+
+:root {
+    font-size: 10px;
+}
+
+html, body {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+input[type='text'] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type='password'] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+li, a {
+    margin-left: 2em;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 42px;
+}
+
+a:hover, li:hover {
+    color: red;
+}
+
+.first {
+    background-color: orangered;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: 3px solid black;
+    background-image: url(../images/profile.jpeg);
+}
+
+#first {
+    background-color: orangered;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: 3px solid black;
+}

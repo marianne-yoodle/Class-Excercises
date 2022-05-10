@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/signUpCSS.css">
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <form>
+            <img id="logo" src="../images/royals-logo.png">
+            <h1>Royals Club Signup Form</h1>
+            <p>Sign up to be a part of this super fun Royals club that doesn't actually exists!</p>
+            <fieldset name="contactInfo">
+                <legend>Contact Info</legend>
+                <input type="text" name="fullName" placeholder="Full Name" required="required"/>
+                <input type="text" name="phoneNumber" placeholder="Phone Number"/>
+                <input type="text" name="emailAddress" placeholder="Email Address"/>
+            </fieldset>
+            <fieldset name="accountInfo">
+                <legend>Account Info</legend>
+                <input type="text" name="username" size="30" placeholder="Username">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <p>Upload Profile Image: <input type="file" name="file"> </p>
+            </fieldset>
+            <fieldset name="shirtInfo">
+                <legend>T-Shirt Info</legend>
+                <select name="shirtSizes">
+                    <option value="xsmall">Xtra Small</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xlarge">Xtra Large</option>
+                </select>
+                <p>Select Shirt Color:
+                    <input type="radio" name="count" id="one" value="blue" checked="checked"/>Blue
+                    <input type="radio" name="count" id="two" value="white"/>White
+                    <input type="radio" name="count" id="three" value="gold"/>Gold
+                </p>
+            </fieldset>
+            <fieldset name="more">
+                <legend>Tell Us More!</legend>
+                <p>
+                    Tell us your favorite Royals memory below to be entered to win one of the perks listed below.
+                </p>
+                <textarea name="text" id="text" cols="30" rows="5"></textarea>
+                <p>Choose Your Perks:</p>
+                <input type="checkbox" name="check" value="tickets"/>Tickets</br>
+                <input type="checkbox" name="check" value="parking"/>Parking</br>
+                <input type="checkbox" name="check" value="peanuts"/>Peanuts</br>
+                <input type="checkbox" name="check" value="drinks"/>Drinks</br>
+                <input type="checkbox" name="check" value="autographs"/>Autographs</br>
+            </fieldset>
+            <button type="submit">Join Today!</button>
+        </form>
+    </body>
+</html>

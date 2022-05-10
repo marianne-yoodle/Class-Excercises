@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <title>About Me</title>
+    </head>
+    <body>
+        <h1>Marianne Engbarth</h1>
+        <h2>Username: marianne.engbarth</h2>
+        <h3><a href="mailto:marianne@yoodle.com">Send me an email</a></h3>
+        <hr/>
+        <h2>About Me</h2>
+        <img src="/Images/profile.jpeg" alt="Profile Picture" width="100" height="100"/>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Traveling</li>
+            <li>Finding new recipes and trying them out in the kitchen</li>
+            <li>Working out</li>
+            <li>Playing Videogames</li>
+        </ul>
+        <hr/>
+        <table width="300" cellpadding="10" cellspacing="5" border="2" bgcolor="#cccccc">
+            <thead>
+                <tr>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>R</th>
+                    <th>F</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td rowspan="2">7</td>
+                </tr>
+            </tbody> 
+            <tfoot>
+                <tr>
+                    <td colspan="6">Month</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr/>
+
+        <div id="submit"></div>
+        <form action="writeText()">
+            <input type="text" name="username" size="30">
+            <input type="password" name="password" id="password">
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            <hr/>
+            <input type="radio" name="count" id="one" value="one"/>One
+            <input type="radio" name="count" id="two" value="two"/>Two
+            <input type="radio" name="count" id="three" value="three" checked="checked"/>Three
+            <hr/>
+            <input type="checkbox" name="check" value="A"/>A
+            <input type="checkbox" name="check" value="B" checked="checked"/>B
+            <input type="checkbox" name="check" value="C"/>C
+            <hr/>
+            <select name="devices">
+                <option value="ipod">ipod</option>
+                <option value="radio">radio</option>
+                <option value="computer">computer</option>
+            </select>
+            <select name="multi" multiple="multiple">
+                <option value="ipod">ipod</option>
+                <option value="radio">radio</option>
+                <option value="computer">computer</option>
+            </select>
+            <hr/>
+            <input type="file" name="file">
+            <input type="submit" value="file upload">
+            <button>Text</button>
+            <input type="hidden" name="" value="text"/>
+            <hr/>
+
+            <fieldset>
+                <legend>Demographics</legend>
+                <label for="age">Age: </label>
+                <input type="text" name="age" required="required"/>
+                <label for="gender">Gender: </label>
+                <input type="text" name="gender"/>
+                <label for="phone">Phone: </label>
+                <input type="text" name="phone"/>
+            </fieldset>
+            <input type="date" name="date" id=""/>
+            <hr/>
+
+            <input type="email" name="" id=""/>
+            <input type="url" name="" id=""/>
+            <input type="search" placeholder="find" name="" id=""/>
+            <button>Click</button>
+        </form>
+
+        <script src="/js/index.js"></script>
+    </body>
+</html>
