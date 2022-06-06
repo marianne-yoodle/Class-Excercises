@@ -1,0 +1,55 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px 15px;
+    background-color: gray;
+}
+
+.container{
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 17%;
+    position: relative;
+}
+
+.card {
+    background-color: darkgray;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: white;
+    box-shadow: 5px 10px 10px;
+    padding: 0px 15px;
+}
+
+.card > *{
+    color: white;
+}
+
+.picAndText {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding: 0 50px 0 50px;
+} 
+
+.centerText {
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5em;
+    float: left;
+  }
+
+img {
+    float: left;
+}
+
+.textRight{
+    color: white;
+    font-size: 2.5em;
+}
